@@ -7,7 +7,7 @@ const port = 3000
 const fs = require('fs')
 
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/login.html'));
 })
 app.post('/home', (req, res) => {
